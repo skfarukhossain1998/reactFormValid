@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Inter&family=Poppins:wght@500&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+    font-family: 'Poppins';
+    margin: 0;
+    overflow: hidden;
 }
+.App{
+  /* border: 1px solid blue; */
+  width: 100%;
+  height: auto;
+  margin: 0;
+  
+}
+.left{
+  width: 40%;
+  height: 733px;
+ /*  border : 2px solid gray */
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+.bothPart{
+  display: flex;
+  margin: 0;
+ }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.right{
+  width: 65%;
+  height: 733px;
+  /* border: 2px solid black; */
+}
+h1{
+  margin-top: 50px;
+  font-weight: 600;
+}
+.link{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+   margin-top: 20px;
+  display: flex;
+}
+.commonBtn{
+  background-color: #FFFFFF;
+  color: black;
+  border-radius: 5px;
+ border: 1px solid grey;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 580;
+  width: 250px;
+  cursor: pointer;
+}
+.container{
+  /* border: 2px solid green; */
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  
+}
+.form-contain{
+  /* border: 2px solid red; */
+  width: 100%;
+  height: auto;
+}
+.btn{
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: skyblue;
   color: white;
+   font-size: 25px;
+  cursor: pointer;
+  text-align: center;
+  padding: 13px;
+  font-weight: 700;
+  border-radius: 7px;
 }
 
-.App-link {
-  color: #61dafb;
+.form-group>input{
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid grey;
+  outline: none;
+  background-color: #FFFFFF;
+  color: black;
+  margin-top:0.5rem;
+  margin-bottom: 1rem;
+  padding: 8px 0px;
+  font-size: 18px;
+}
+::placeholder {
+  color:grey;
+  opacity: 0.6; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input::placeholder {
+  font-size: 18px;
+  color: grey;
+}
+
+.error{
+  color: red;
+  margin-top: 15px;
+}
+.success{
+  color: blue;
+  margin-top: 10px;
+
+}
+.message{
+  gap: 0;
+  text-align: center;
+}
+
+.rightPart{
+  margin-top: 5rem;
+  /* border: 2px solid purple; */
+  width: 60%;
+display: flex;
+flex-direction: column;
+}
+
+h2{
+  margin-top: 20px;
+  color: grey;
+  text-align: center;
 }
